@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 int main() {
     int N;
     scanf("%d", &N);
@@ -12,11 +13,13 @@ int main() {
 
     for (int i = 0; i < N; i++) {
         int count = 0;
+        
         for (int j = 0; j < N; j++) {
             if (arr[i] == arr[j]) {
                 count++;
             }
         }
+
         if (arr[i] == count) {
             if (min == -1 || arr[i] < min) {
                 min = arr[i];
